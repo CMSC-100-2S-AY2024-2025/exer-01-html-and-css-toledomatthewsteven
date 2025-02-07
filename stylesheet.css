@@ -16,25 +16,31 @@
     float: left;
 }
 
+#left{
+    float: left;
+    height: 100%
+}
+
 #center {
-    margin: 10px;
-    float: center;
+    margin: 10px; 
     background-color: beige;
     margin-left: 100px;
 
 }
 
+#project_showcase {
+}
 
-
-
+.placeholder_img{
+    height: 150px;
+}
 
 body {
     background-image: url("https://www.itl.cat/pngfile/big/155-1557017_engineer-tf2-sentry-tf2-team-fortress-2-wallpaper.jpg");
-    /* background-image: url("https://cdn.mos.cms.futurecdn.net/7b451a3efbb6d231bd777abf1dc942fd.jpg"); */
-    background-color: #cccccc; /* Used if the image is unavailable */
+    background-color: #cccccc; 
     height: 100%;
-    background-position: center; /* Center the image */
-    background-repeat: repeat; /* Do not repeat the image */
+    background-position: center; 
+    background-repeat: repeat; 
     background-size: cover; /* Resize the background image to cover the entire container */
     
 }
