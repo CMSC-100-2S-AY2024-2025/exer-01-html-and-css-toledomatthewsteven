@@ -15,6 +15,50 @@
     display: block;
 }
 
+/* NAV BAR */
+ 
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(224, 224, 224);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 1px gray;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(224, 224, 224);
+    margin: 5px;
+    color: black;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar-p{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(224, 224, 224);
+    margin: 5px;
+    color: black;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+}
+
 /* BODY */
 
 .space-maker{
@@ -29,12 +73,11 @@
 }
 
 .white-box-text{
-    background-color: rgba(226, 226, 226, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 20px;
     color: rgb(189, 189, 189);
-    size: 30vw;
     font-family: monospace;
-    font-size: larger;  
+    font-size: x-large;  
     width: 90%; 
     word-wrap: break-word;  
     line-height: 1.5;
@@ -54,7 +97,7 @@ body {
 
 #about-me_photo{
     width: auto;
-    height: 60vh;
+    height: 50vh;
     box-shadow: 10px 10px 1px gray;
     margin-left: 5vh
 }
