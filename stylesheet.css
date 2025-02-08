@@ -1,4 +1,10 @@
-/* ILL DOCUMENT THIS CRAP TOMORROW WTFFFFF */
+/* Create custom font class */
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 /* HEADERS */
 
@@ -17,7 +23,7 @@
 
 /* NAV BAR (credits to BroCode on youtube for most of this i just played around after */
  
-.navbar ul{
+.navbar ul{ 
     list-style-type: none; /*Remove bullets*/
     background-color: rgb(224, 224, 224);  
     box-shadow: 10px 10px 1px gray;
@@ -30,7 +36,7 @@
     padding: 0;  
 }
 
-.navbar a{
+.navbar a{ 
     color: white;
     text-decoration: none; /*Remove underline that comes with anchors*/
     background-color: rgb(224, 224, 224); 
@@ -39,8 +45,8 @@
     padding: 15px;
     display: block; /*Keep anchors in the bar*/
     text-align: center;
-    font-family: monospace;
-    font-size: x-large;
+    font-family: "Press Start 2P", serif; /*Use custom font*/
+    font-size: large;
 } 
 
 .navbar-p{ /*Same format as anchors*/
@@ -72,6 +78,7 @@ body {
 }
 
 .black-box-text{
+    font-family: "Press Start 2P", serif; /*Use custom font*/
     background-color: rgb(14, 13, 13); 
     width: 90%; 
     padding: 20px;
