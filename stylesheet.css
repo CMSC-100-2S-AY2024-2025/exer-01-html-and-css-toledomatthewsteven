@@ -120,6 +120,26 @@ body {
     height: auto; 
 }
 
+/* BODY: SKILLS */
+
+#skills_container{
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 40px;
+}
+
+#skills_photo{
+    width: 30vw; /*These dimension constraints bcoz MY FACE WARPS IF I USE OTHERS (and i dont wanna use fixed pixel sizes for this giant*/
+    height: 40%;
+    box-shadow: 10px 10px 1px gray; 
+    margin-right: 5vh;
+    margin-top: 5vh;
+}
+
+#skills_content, #skills_header{  
+    margin-left: 5vh;
+}
+
 /* BODY: ABOUT ME */
 
 #about-me_container{
@@ -129,10 +149,11 @@ body {
 }
 
 #about-me_photo{
-    width: auto; /*These dimension constraints bcoz MY FACE WARPS IF I USE OTHERS (and i dont wanna use fixed pixel sizes for this giant*/
-    height: 50vh;
+    width: 40vw; /*These dimension constraints bcoz MY FACE WARPS IF I USE OTHERS (and i dont wanna use fixed pixel sizes for this giant*/
+    height: 40%;
     box-shadow: 10px 10px 1px gray;
     margin-left: 5vh;
     margin-top: 3vh;
 }
+
  
