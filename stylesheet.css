@@ -19,7 +19,7 @@
 #banner-image {
     width: 98vw; /*Ensure the banner spans basically all of the WINDOW width*/
     height: auto;  
-}
+} 
 
 /* NAV BAR (credits to BroCode on youtube for most of this i just played around after */
  
@@ -63,6 +63,11 @@
 
 /* BODY (real body) */
 
+*{
+    list-style-type: none;
+    text-decoration: none;
+}
+
 body {
     background-image: url("./image_assets/background_texture.png");
     background-color: #201c1c; /*For if bg-img doesnt load*/
@@ -70,7 +75,9 @@ body {
     color: rgb(211, 211, 211); 
     display: flex; /*For alignment*/
     align-items: center;  
-    flex-direction: column; /*To keep things vertical*/  
+    flex-direction: column; /*To keep things vertical*/   
+    height: 100%;
+    margin: 0;
 }
 
 .space-maker{ /*Invisible*/
@@ -156,4 +163,50 @@ body {
     margin-top: 3vh;
 }
 
- 
+/* FOOTER (credits to Marc Hinton on Youtube for a lot ... well, most. of this)*/
+
+.footer { /*The big gray row in its entirety*/
+    width: 100%; /*Cover page side-to-side*/
+    display: block;
+    overflow: hidden;
+    padding: 40px 0;  
+    background-color: rgb(36, 36, 36); 
+}
+
+.inner_footer{ /*Inner section that */
+    margin: 0 auto;
+    width: 1100px; 
+}
+
+.inner_footer .logo_container{ /*Houses the logo only*/
+    width: 20%; /*Width will be 20% of the INNER FOOTER*/
+    float: left;
+    height: 100%;
+}
+
+.inner_footer .logo_container img{ /*Img tags within the container only*/
+    width: 70%; /*Width will be 70% of the LOGO CONTAINER, so there is a margin-mimick between this and footer-content*/
+    height: auto;
+}
+
+.inner_footer .footer_content{ /*Text holder*/
+    width: 60%;  
+    height: 100%;
+    float: left; 
+}
+
+.inner_footer .footer_content h1{
+    font-family: "Press Start 2P";
+    font-size: 22px;
+    color: white; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner_footer .footer_content a{  
+    font-size: 18px;
+    font-weight: bolder;
+    color: white; 
+    width: 100%;
+    margin-bottom: 10px;  
+}

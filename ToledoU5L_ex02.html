@@ -22,17 +22,17 @@
    
     <nav class="navbar"> <!--No need for div container, same reason as for banner image. Rawdoging it. -->
         <ul>
-            <li><a href="">PROJECTS</a></li>
+            <li><a href="#projects_header">PROJECTS</a></li>
             <li><p class="navbar-p">-</p></li>
-            <li><a href="">SKILLS</a></li>
+            <li><a href="#skills_header">SKILLS</a></li>
             <li><p class="navbar-p">-</p></li>
-            <li><a href="">AUTOBIOGRAPHY</a></li>
+            <li><a href="#about-me_header">AUTOBIOGRAPHY</a></li>
         </ul>
     </nav> 
      
     <!--*************** Content Portion of the page ***************-->
         <!-- flow will be projects, skills, autobiography, footer -->
-    <h1 class="black-box-text" style="text-align: center;"> <!-- Adding class identifier for style -->
+    <h1 class="black-box-text" style="text-align: center;" id="projects_header"> <!-- Adding class identifier for style -->
         PREVIOUS PROJECTS
     </h1>
 
@@ -54,9 +54,10 @@
         </div>  
     </div>
 
+    <!-- SKILLS Container -->
     <div id = "skills_container">
-        <div id="skills-text_container">
-            <h1 class="black-box-text" id = "skills_header">
+        <div id="skills-text_container"> <!-- All TEXT within one container to the side -->
+            <h1 class="black-box-text" id = "skills_header">  <!-- Header with individual properties-->
                 SKILLS
             </h1>
 
@@ -69,7 +70,7 @@
                 My ability to adapt to different environments and lead effectively has resulted in plentiful successful outcomes and positive experiences for everyone involved.
 
                 <br><br>
-                <i>Using these skills, I hope to one day help in the production of hearing aids because, Lord, I know I'll probably need one by the time I'm 25.</i>
+                <i>Using these skills, I hope to enjoy my CMSC 100 course, titled Web Programming, so I can try to grasp and realize how much extensive labor is put into my favorite websites.</i>
                 <br>
             </p>
             
@@ -80,10 +81,6 @@
         <img src="./image_assets/skills_photo.png" id="skills_photo">
         
     </div>
-
-
-
-
 
      <!--About-me OR Autobiography Container (spans entirety of this site row/section)-->
     <div id="about-me_container"> 
@@ -98,7 +95,7 @@
 
             <p class="white-box-text" id="about-me-text_content"> <!--Not a lot of line breaks coz text automatically adjusts to browser size. See CSS file.-->
                 My name is Matthew Steven Toledo, nickname: Steven. I was raised and spent most of my life in Muntinlupa, and I went to De La Salle Zobel for elementary and high school.
-                Eventually, I was accepted into the BS Statistics program in the University of the Philippines Los Banos, but I soon shifted to the university's BS Computer Science program.  
+                Eventually, I was accepted into the BS Statistics program in the University of the Philippines Los Baños, but I soon shifted to the university's BS Computer Science program.  
 
                 <br><br>
                 That leads to now, where this website is made as part of a requirement for CMSC 100, a course included in the BS Computer Science curriculum. 
@@ -117,9 +114,24 @@
                 Thanks for reading this "autobiography".
             </p>
         </div>
-    </div>
+    </div> 
 
-    <br><br><br><br>
-    <br><br><br><br>
+    <div class="footer">
+        <div class="inner_footer"> 
+            <div class = "logo_container">
+                
+                <img src="./image_assets/sniper_logo.png" id="sniper-logo-1" style="opacity: 100%; ">
+            </div> 
+
+            <div class="footer_content">
+                <h1>Discover more.</h1>
+                <p>(323) 622-SOUR </p>
+                <p>Pedro R. Sandoval Ave, Los Baños, 4031 Laguna</p>  
+                <p>No copyright infringement intended.</p>
+                <a href="#header-container">Back To Top</a>
+            </div> 
+            
+        </div> 
+    </div> 
 </body>
 </html>
