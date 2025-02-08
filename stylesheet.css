@@ -3,42 +3,51 @@
 /* HEADERS */
 
 #header-container {
-    display: flex; 
-    color: white; 
+    display: flex;   
+    justify-content: center; /* Center the logo */
     margin: 5px;
-    height: 80px;
+    height: 80px; /* Preset height size */
     width: 99%;  
-    justify-content: center; 
 }
 
 #banner-image {
-    width: 98vw;
-    height: auto; 
-    display: block;
+    width: 98vw; /*Ensure the banner spans basically all of the WINDOW width*/
+    height: auto;  
 }
 
-/* NAV BAR */
+/* NAV BAR (credits to BroCode on youtube for most of this i just played around after */
  
 .navbar ul{
-    list-style-type: none;
-    background-color: rgb(224, 224, 224);
-    padding: 0; 
-    overflow: hidden;
-    margin: 4px;
+    list-style-type: none; /*Remove bullets*/
+    background-color: rgb(224, 224, 224);  
+    box-shadow: 10px 10px 1px gray;
+    display: flex;
+    justify-content: center; 
+    margin: 4px; /* Margins/Padding to shape the bar itself */
     margin-left: 30vh;
     margin-right: 30vh;
-    display: flex;
-    justify-content: center;
-    box-shadow: 10px 10px 1px gray;
     margin-bottom: 40px;
+    padding: 0;  
 }
 
 .navbar a{
     color: white;
-    text-decoration: none;
+    text-decoration: none; /*Remove underline that comes with anchors*/
+    background-color: rgb(224, 224, 224); 
+    color: black;
+    margin: 5px;
+    padding: 15px;
+    display: block; /*Keep anchors in the bar*/
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+} 
+
+.navbar-p{ /*Same format as anchors*/
+    text-decoration: none; 
+    color: black;
     background-color: rgb(224, 224, 224);
     margin: 5px;
-    color: black;
     padding: 15px;
     display: block;
     text-align: center;
@@ -46,60 +55,56 @@
     font-size: x-large;
 }
 
-.navbar li{
-    float: left;
+/* BODY (real body) */
+
+body {
+    background-image: url("./image_assets/background_texture.png");
+    background-color: #201c1c; /*For if bg-img doesnt load*/
+    font-family: Arial, Helvetica, sans-serif; /*Default font and font-color*/
+    color: rgb(211, 211, 211); 
+    display: flex; /*For alignment*/
+    align-items: center;  
+    flex-direction: column; /*To keep things vertical*/  
 }
 
-.navbar-p{
-    color: white;
-    text-decoration: none;
-    background-color: rgb(224, 224, 224);
-    margin: 5px;
-    color: black;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    font-family: monospace;
-    font-size: x-large;
-}
-
-/* BODY */
-
-.space-maker{
+.space-maker{ /*Invisible*/
     opacity: 0;
 }
 
 .black-box-text{
-    background-color: rgb(14, 13, 13);
-    size: 30vw;
-    padding: 20px;
+    background-color: rgb(14, 13, 13); 
     width: 90%; 
+    padding: 20px;
 }
 
 .white-box-text{
     background-color: rgba(255, 255, 255, 0.05);
-    padding: 20px;
     color: rgb(189, 189, 189);
+    padding: 20px;
     font-family: monospace;
     font-size: x-large;  
     width: 90%; 
-    word-wrap: break-word;  
-    line-height: 1.5;
+    word-wrap: break-word; /*Allows text to wrap around text-space freely without needing excessive line breaks in HTML file*/
+    line-height: 1.5; /*Space between lines*/
 }
 
+/* BODY: PROJECTS */
+
 #projects_container{ 
-    display: flex; 
-    justify-content: space-between;  
+    display: flex; /*Keep project-box within the same row*/
+    justify-content: center;
+    /* flex-wrap: wrap; */
+        /* Nah. */
 }
 
 .project-box{
     background-color: rgba(255, 255, 255, 0.05); 
     color: rgb(199, 199, 199);
     float: left; 
-    margin-bottom: 40px;
+    margin-bottom: 40px; /*Spacings and such*/
     margin: 20px;
     padding: 20px;
-    width: 30%; 
+    width: 30%; /*Take up 30% of the projects-container width*/
     text-align: center;
 }
 
@@ -108,18 +113,7 @@
     height: auto; 
 }
 
-body {
-    background-image: url("./image_assets/background_texture.png");
-    background-color: #201c1c; 
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(211, 211, 211);
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    margin: 0;
-    min-height: 100vh;  
-}
+/* BODY: ABOUT ME */
 
 #about-me_container{
     display: flex;
@@ -128,7 +122,7 @@ body {
 }
 
 #about-me_photo{
-    width: auto;
+    width: auto; /*These dimension constraints bcoz MY FACE WARPS IF I USE OTHERS (and i dont wanna use fixed pixel sizes for this giant*/
     height: 50vh;
     box-shadow: 10px 10px 1px gray;
     margin-left: 5vh;

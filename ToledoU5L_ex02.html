@@ -8,37 +8,36 @@
     <link rel="stylesheet" href="./stylesheet.css"> 
 </head>
 <body>
+    <!-- Top part of the page -->
     <div id="header-container">
-        <img src="./image_assets/sniper_logo.png" id="sniper-logo-1" style="opacity: 70%; height:80px; width: 80px;"> 
+        <img src="./image_assets/sniper_logo.png" id="sniper-logo-1" style="opacity: 70%; height:100%; "> <!-- Match the height of the div header-container -->
     </div>   
 
-    <img src="./image_assets/header-gif-v3.gif" id="banner-image" >
- 
-    
-    <div id="div-navbar">
-        <nav class="navbar">
-           <ul>
-               <li><a href="">PROJECTS</a></li>
-               <li><p class="navbar-p">-</p></li>
-               <li><a href="">SKILLS</a></li>
-               <li><p class="navbar-p">-</p></li>
-               <li><a href="">AUTOBIOGRAPHY</a></li>
-           </ul>
-        </nav>
-   </div>
+    <img src="./image_assets/header-gif-v3.gif" id="banner-image" >  <!-- Straight up plop the banner image in there without a div container bcoz i like how it looks -->
+   
+    <nav class="navbar"> <!--No need for div container, same reason as for banner image. Rawdoging it. -->
+        <ul>
+            <li><a href="">PROJECTS</a></li>
+            <li><p class="navbar-p">-</p></li>
+            <li><a href="">SKILLS</a></li>
+            <li><p class="navbar-p">-</p></li>
+            <li><a href="">AUTOBIOGRAPHY</a></li>
+        </ul>
+    </nav> 
      
-
-    <!-- tbh flow could be project, skills, autobiography, footer -->
-    <h1 class="black-box-text" style="text-align: center;">
+    <!--*************** Content Portion of the page ***************-->
+        <!-- flow will be projects, skills, autobiography, footer -->
+    <h1 class="black-box-text" style="text-align: center;"> <!-- Adding class identifier for style -->
         PREVIOUS PROJECTS
     </h1>
-    <div id="projects_container">
-        <div class="project-box" id="CMSC12">
+
+    <div id="projects_container"> <!--Real stuff now. This div-container houses all three project-boxes. -->
+        <div class="project-box" id="CMSC12"> <!--Inner child box that houses texts and images-->
             <h1>Miraculous</h1>
-            <img src="./image_assets/cmsc12_proj.png" class="projects_images">
+            <img src="./image_assets/cmsc12_proj.png" class="projects_images"> 
             <h3>Miraculous is a terminal-based quiz game, developed using Python, about random Muntinlupa City trivia facts.</h3>
         </div>
-        <div class="project-box" id="CMSC22">
+        <div class="project-box" id="CMSC22"> <!--Same idea for the other boxes within projects_container-->
             <h1>Team Fortress 2: Critical Delivery</h1>
             <img src="./image_assets/cmsc22_proj.png" class="projects_images">
             <h3>Team Fortress 2: Critical Delivery is a Java-developed local two-player game wherein the players must deliver the demands of the mercenaries in order to survive.</h3>
@@ -47,23 +46,23 @@
             <h1>Diet Problem Solver</h1>
             <img src="./image_assets/cmsc150_proj.png" class="projects_images">
             <h3>Diet Problem Solver is a RStudio-based application that computes to see if a given food diet matches arbritary diet restrictions.</h3>
-        </div>
+        </div>  
     </div>
 
-     
+     <!--About-me OR Autobiography Container (spans entirety of this site row/section)-->
     <div id="about-me_container"> 
         <img src="./image_assets/about_me.png" id="about-me_photo">
         <div>
-            <h2 class="space-maker">......</h2>
+            <h2 class="space-maker">......</h2> <!--There's no real reason for this other than I played around with margins after making this layout. peace.-->
         </div>
         <div id="about-me-text_container">
             <h1 class="black-box-text">
                 AUTOBIOGRAPHY
             </h1>
 
-            <p class="white-box-text" id="about-me-text_content">
+            <p class="white-box-text" id="about-me-text_content"> <!--Not a lot of line breaks coz text automatically adjusts to browser size. See CSS file.-->
                 My name is Matthew Steven Toledo, nickname: Steven. I was raised and spent most of my life in Muntinlupa, and I went to De La Salle Zobel for elementary and high school.
-                Eventually, I was accepted into the BS Statistics program in the University of the Philippines Los Banos, but I soon shifted to the university's BS Computer Science program.
+                Eventually, I was accepted into the BS Statistics program in the University of the Philippines Los Banos, but I soon shifted to the university's BS Computer Science program.  
 
                 <br><br>
                 That leads to now, where this website is made as part of a requirement for CMSC 100, a course included in the BS Computer Science curriculum. 
@@ -73,11 +72,11 @@
                 <br>
                 My favorite video game of all time is Team Fortress 2. 
                 As such, in some of my photos, I am cosplaying the Sniper! 
-                I have also cosplayed Scout and Soldier; they are from TF2 as well, and I hope to cosplay more soon.  
+                I have also cosplayed Scout and Soldier; they are characters/classes from TF2 as well, and I hope to cosplay more soon.  
                 My other favorite video games are Left 4 Dead 2 and ULTRAKILL. <br><br> 
                 
                 My favorite singers/artists are Taylor Swift, Olivia Rodrigo, and Stray Kids, 
-                and my favorite anime is The Disastrous Life of Saiki K. <br>
+                and my favorite anime is The Disastrous Life of Saiki K. I hope to cosplay Saiki K as well, even if my favorite character from that show is Aren Kuboyasu.<br>
                 <br>
                 Thanks for reading this "autobiography".
             </p>
