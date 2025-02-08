@@ -1,3 +1,7 @@
+/* <!-- Toledo, Matthew Steven P. -->
+<!-- CMSC 100 U5L - 2023-10986 -->
+<!-- Exercise 01; February 7, 2025 -->  */
+
 /* Create custom font class */
 
 .press-start-2p-regular {
@@ -48,6 +52,11 @@
     font-family: "Press Start 2P", serif; /*Use custom font*/
     font-size: large;
 } 
+
+.navbar a:hover{ /*Hover animation*/
+    text-decoration: underline;
+    color: rgb(235, 76, 76); 
+}
 
 .navbar-p{ /*Same format as anchors*/
     text-decoration: none; 
@@ -120,6 +129,10 @@ body {
     padding: 20px;
     width: 30%; /*Take up 30% of the projects-container width*/
     text-align: center;
+}
+
+.project-box:hover{ /*Hover animation... akala mo malalaro mo yung game BWAAHAHAHAHA*/
+    background-color: rgba(255, 255, 255, 0.15); 
 }
 
 .projects_images{
@@ -209,4 +222,10 @@ body {
     color: white; 
     width: 100%;
     margin-bottom: 10px;  
+}
+
+.inner_footer .footer_content a:hover{ /*Hover animation*/
+    text-decoration: underline;
+    color: rgb(141, 141, 141);
+    background-color: #dad0cd;
 }
