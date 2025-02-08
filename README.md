@@ -5,7 +5,7 @@ Full name: Toledo, Matthew Steven P.
 Degree Program: BS Computer Science
 
 Live Website Link:
-    (to be filled)
+    https://cmsc-100-2s-ay2024-2025.github.io/exer-01-html-and-css-toledomatthewsteven/
 
 Steps on how to create GitHub page:
     1. Go to GitHub and open the repository you want to host.
